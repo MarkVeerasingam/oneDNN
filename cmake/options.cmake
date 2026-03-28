@@ -430,3 +430,14 @@ option(DNNL_AARCH64_USE_ACL "Enables use of AArch64 optimised functions
     This is only supported on AArch64 builds and assumes there is a
     functioning Compute Library build available at the location specified by the
     environment variable ACL_ROOT_DIR." OFF)
+
+
+# ====================================================
+# s390x optimizations with the NNPA through ZDNN C API
+# ====================================================
+option(DNNL_S390X_USE_ZDNN "Enables use of s390x NNPA optimised functions
+    through the zDNN C API.
+    This is only supported on s390x builds and assumes there is a
+    functioning zDNN installation available at the location specified by the
+    environment variable ZDNN_ROOT_DIR or CMake variable -DZDNN_ROOT_DIR=<path>."
+    OFF)
